@@ -34,29 +34,30 @@ colorItems.forEach(function(item) {
     
     switch(attr) {
       case 'black':
-        imgHolder.setAttribute('src', `${link}black.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
       case 'blue':
-        imgHolder.setAttribute('src', `${link}blue.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
       case 'graphite':
-        imgHolder.setAttribute('src', `${link}graphite.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
       case 'orange':
-        imgHolder.setAttribute('src', `${link}orange.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
       case 'red':
-        imgHolder.setAttribute('src', `${link}red.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
       case 'white':
-        imgHolder.setAttribute('src', `${link}white.png`)
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
-      case 'whitepure':
-        imgHolder.setAttribute('src', `${link}white-pure.png`)
+      case 'white-pure':
+        imgHolder.setAttribute('src', `${link}${attr}.png`)
         break;
     }
   })
 })
+
 
 
 
