@@ -18,7 +18,9 @@ https://webcademy.ru/files/js2020/solaris/white-pure.png
 
 
 const colorItems = document.querySelectorAll('.colorItem');
-
+const imgHolder = document.querySelector('#imgHolder img');
+const link = '//webcademy.ru/files/js2020/solaris/';
+let attr;
 
 colorItems.forEach(function(item) {
   item.addEventListener('click', function(event) {
@@ -28,8 +30,39 @@ colorItems.forEach(function(item) {
       })
     }
     item.classList.add('colorItem--active');
+    attr = item.getAttribute('color')
+    
+    switch(attr) {
+      case 'black':
+        imgHolder.setAttribute('src', `${link}black.png`)
+        break;
+      case 'blue':
+        imgHolder.setAttribute('src', `${link}blue.png`)
+        break;
+      case 'graphite':
+        imgHolder.setAttribute('src', `${link}graphite.png`)
+        break;
+      case 'orange':
+        imgHolder.setAttribute('src', `${link}orange.png`)
+        break;
+      case 'red':
+        imgHolder.setAttribute('src', `${link}red.png`)
+        break;
+      case 'white':
+        imgHolder.setAttribute('src', `${link}white.png`)
+        break;
+      case 'whitepure':
+        imgHolder.setAttribute('src', `${link}white-pure.png`)
+        break;
+    }
   })
 })
+
+// imgHolder.setAttribute('src', `${link}blue.png`)
+
+
+
+
 
 
 
