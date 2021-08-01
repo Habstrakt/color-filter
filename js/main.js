@@ -30,7 +30,7 @@ colorItems.forEach(function(item) {
       })
     }
     item.classList.add('colorItem--active');
-    attr = event.target.getAttribute('color');
+    attr = item.getAttribute('color');
     imgHolder.setAttribute('src', `${link}${attr}.png`);
   })
 })
