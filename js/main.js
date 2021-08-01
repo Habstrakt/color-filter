@@ -58,8 +58,6 @@ colorItems.forEach(function(item) {
   })
 })
 
-// imgHolder.setAttribute('src', `${link}blue.png`)
-
 
 
 
