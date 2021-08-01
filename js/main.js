@@ -30,31 +30,8 @@ colorItems.forEach(function(item) {
       })
     }
     item.classList.add('colorItem--active');
-    attr = item.getAttribute('color')
-    
-    switch(attr) {
-      case 'black':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'blue':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'graphite':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'orange':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'red':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'white':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-      case 'white-pure':
-        imgHolder.setAttribute('src', `${link}${attr}.png`)
-        break;
-    }
+    attr = event.target.getAttribute('color');
+    imgHolder.setAttribute('src', `${link}${attr}.png`);
   })
 })
 
