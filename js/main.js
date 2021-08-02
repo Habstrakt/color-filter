@@ -24,13 +24,12 @@ let attr;
 
 colorItems.forEach(function(item) {
   item.addEventListener('click', function(event) {
-    if(!event.target.classList.contains('colorItem--active')) {
-      document.querySelectorAll('.colorItem--active').forEach(function(active) {
-        active.classList.remove('colorItem--active');
-      })
+    const activeItem = document.querySelector('.colorItem--active');
+    if (activeItem) {
+       activeItem.classList.remove('colorItem--active')
     }
     item.classList.add('colorItem--active');
-    attr = item.getAttribute('color');
+    attr = item.getAttribute('data-color');
     imgHolder.setAttribute('src', `${link}${attr}.png`);
   })
 })
